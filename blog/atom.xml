@@ -7,7 +7,7 @@ layout: feed
         <title>Digital Portfolio - NIFisher</title>
         <link href="http://nifisher.github.io/blog/atom.xml" rel="self"/>
         <link href="http://nifisher.github.io/blog"/>
-        <updated>&lbrace;&lbrace; site.time | date_to_xmlschema &rbrace;&rbrace;</updated>
+        <updated>{{ site.time | date_to_xmlschema }}</updated>
         <id>http://hankquinlan.github.io/blog</id>
         <author>
                 <name>NIFisher</name>
@@ -16,11 +16,11 @@ layout: feed
 
         &lbrace;&percnt; for post in site.posts &percnt;&rbrace;
                 <entry>
-                        <title>&lbrace;&lbrace; post.title &rbrace;&rbrace;</title>
-                        <link href="http://nifisher.github.io&lbrace;&lbrace; post.url &rbrace;&rbrace;"/>
-                        <updated>&lbrace;&lbrace; post.date | date_to_xmlschema &rbrace;&rbrace;</updated>
-                        <id>http://nifisher.github.io&lbrace;&lbrace; post.id &rbrace;&rbrace;</id>
-                        <content type="html">&lbrace;&lbrace; post.content | xml_escape &rbrace;&rbrace;</content>
+                        <title>{{ post.title }}</title>
+                        <link href="http://nifisher.github.io{{ post.url }}"/>
+                        <updated>{{ post.date | date_to_xmlschema }}</updated>
+                        <id>http://nifisher.github.io{{ post.id }}</id>
+                        <content type="html">{{ post.content | xml_escape }}</content>
                 </entry>
         &lbrace;&percnt; endfor &percnt;&rbrace;
 
