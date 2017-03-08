@@ -1,0 +1,27 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+        <title>Digital Portfolio - NIFisher</title>
+        <link href="http://nifisher.github.io/blog/atom.xml" rel="self"/>
+        <link href="http://nifisher.github.io/blog"/>
+        <updated>&lbrace;&lbrace; site.time | date_to_xmlschema &rbrace;&rbrace;</updated>
+        <id>http://hankquinlan.github.io/blog</id>
+        <author>
+                <name>NIFisher</name>
+                <email>fisherni@gmail.com</email>
+        </author>
+
+        &lbrace;&percnt; for post in site.posts &percnt;&rbrace;
+                <entry>
+                        <title>&lbrace;&lbrace; post.title &rbrace;&rbrace;</title>
+                        <link href="http://nifisher.github.io&lbrace;&lbrace; post.url &rbrace;&rbrace;"/>
+                        <updated>&lbrace;&lbrace; post.date | date_to_xmlschema &rbrace;&rbrace;</updated>
+                        <id>http://nifisher.github.io&lbrace;&lbrace; post.id &rbrace;&rbrace;</id>
+                        <content type="html">&lbrace;&lbrace; post.content | xml_escape &rbrace;&rbrace;</content>
+                </entry>
+        &lbrace;&percnt; endfor &percnt;&rbrace;
+
+</feed>

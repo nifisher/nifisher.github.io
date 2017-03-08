@@ -1,0 +1,11 @@
+---
+layout: default
+title: Personal Posts     
+---
+        <h1>&lbrace;&lbrace; page.title &rbrace;&rbrace;</h1>
+        <ul class="posts">
+
+          &lbrace;&percnt; for post in site.posts &percnt;&rbrace;
+            <li><span>&lbrace;&lbrace; post.date | date_to_string &rbrace;&rbrace;</span> » <a href="&lbrace;&lbrace; post.url &rbrace;&rbrace;" title="&lbrace;&lbrace; post.title &rbrace;&rbrace;">&lbrace;&lbrace; post.title &rbrace;&rbrace;</a></li>
+          &lbrace;&percnt; endfor &percnt;&rbrace;
+        </ul>
