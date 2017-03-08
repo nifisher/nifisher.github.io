@@ -2,10 +2,8 @@
 title: textHEAVY
 description: A portfolio and personal site for nifisher
 url: "http://nifisher.github.io"  
-author:
-	name: "nifisher"
-	email: "fisherni@gmail.com"
-	url: "http://nifisher.github.io"
+name: nifisher
+email: "fisherni@gmail.com"
 
 # Build Settings
 markdown: kramdown
