@@ -14,7 +14,7 @@ layout: feed
                 <email>fisherni@gmail.com</email>
         </author>
 
-        &lbrace;&percnt; for post in site.posts &percnt;&rbrace;
+        {% for post in site.posts %}
                 <entry>
                         <title>{{ post.title }}</title>
                         <link href="http://nifisher.github.io{{ post.url }}"/>
@@ -22,6 +22,5 @@ layout: feed
                         <id>http://nifisher.github.io{{ post.id }}</id>
                         <content type="html">{{ post.content | xml_escape }}</content>
                 </entry>
-        &lbrace;&percnt; endfor &percnt;&rbrace;
-
+                {% endfor %}
 </feed>
