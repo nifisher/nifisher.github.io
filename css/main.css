@@ -41,3 +41,13 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+<!-- for split alignment on same line -->
+<!-- clear float after.. <div style="clear: both"></div> -->
+.alignleft {
+      float: left;
+   }
+
+.alignright {
+         float: right;
+      }
