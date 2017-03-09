@@ -10,7 +10,7 @@ markdown: kramdown
 baseurl: /
 source: .
 destination: ./_site
-permalink: /blog/:year/:month/:day/:title
+permalink: /plan/:year/:month/:day/:title
 timezone: America/New_York
 
 # Custom variables
