@@ -7,8 +7,8 @@ description: Personal Posts
 
            {% for post in site.posts %}
             <li>
-                  <span>[{{ post.date | date_to_string }}]</span> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-	  	            <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+               <p><span>[{{ post.date | date_to_string }}]</span> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+               <br>{{ post.content | strip_html | truncatewords:50 }}</p>
             </li>
             {% endfor %}
         </ul>
