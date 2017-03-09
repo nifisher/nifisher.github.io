@@ -4,23 +4,24 @@ layout: feed
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-        <title>Digital Portfolio - NIFisher</title>
-        <link href="http://nifisher.github.io/plan/atom.xml" rel="self"/>
-        <link href="http://nifisher.github.io/plan"/>
-        <updated>{{ site.time | date_to_xmlschema }}</updated>
-        <id>http://nifisher.github.io/plan</id>
-        <author>
-                <name>NIFisher</name>
-                <email>fisherni@gmail.com</email>
-        </author>
+ <title>{{ site.title }} .plan</title>
+ <link href="{{ site.url }}/plan/atom.xml" rel="self"/>
+ <link href="{{ site.url }}/plan" rel="self"/>
+ <id>{{ site.url }}/plan</id>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <author>
+   <name>{{ site.author.name }}</name>
+   <uri>{{ site.author.url }}</uri>
+   <email>{{ site.author.email }}</email>
+ </author>
 
-        {% for post in site.posts %}
-                <entry>
-                        <title>{{ post.title }}</title>
-                        <link href="http://nifisher.github.io{{ post.url }}"/>
-                        <updated>{{ post.date | date_to_xmlschema }}</updated>
-                        <id>http://nifisher.github.io{{ post.id }}</id>
-                        <content type="html">{{ post.content | xml_escape }}</content>
-                </entry>
-                {% endfor %}
+{% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://nifisher.github.io{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>{{ site.url }}{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+{% endfor %}
 </feed>
