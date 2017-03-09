@@ -19,6 +19,6 @@ timezone: America/New_York
 version: "1.0.0"
 
 # Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+custom_header: false # injuect custom header with header-custom.html
+custom_nav_footer: false # inject custom nav footer with nav-footer-custom.html
+reverse: true # true puts nav on left, false on right
