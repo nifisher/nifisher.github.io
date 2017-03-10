@@ -10,7 +10,7 @@ description: "Personal Posts"
             <li>
             <p><h2><ahref="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
                {{ post.content | strip_html | truncatewords:50 }}
-               <div style="alignright">[{{ post.date | date_to_string }}]</div>
+               <div class="alignright">[{{ post.date | date_to_string }}]</div>
                <div style="float-clear"></div>
             </p>
             </li>
