@@ -9,7 +9,12 @@ description: "Personal Posts"
            {% for post in site.posts %}
             <li>
             <p><h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-               {{ post.content | strip_html | truncatewords:50 }}
+					{% if post.content contains '<!--more-->' %}
+               	{{ post.content | split:'<!--more-->' | first }}
+            	{% else %}
+                	{{ post.excerpt }}
+            	{% endif %}
+            <a href="{{ post.url }}">read more</a>               
                <div class="alignright">[{{ post.date | date_to_string }}]</div>
                <div style="float-clear"></div>
             </p>
