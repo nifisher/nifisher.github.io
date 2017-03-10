@@ -8,8 +8,8 @@ description: "Personal Posts"
 
            {% for post in site.posts %}
             <li>
-               <p><h2><a class="alignleft" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  <span class="alignright">[{{ post.date | date_to_string }}]</span></h2>
+               <p><h2><a class="alignleft" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+                  <span class="alignright">[{{ post.date | date_to_string }}]</span>
                <div style="float-clear"></div>
                <br>{{ post.content | strip_html | truncatewords:50 }}</p>
             </li>
