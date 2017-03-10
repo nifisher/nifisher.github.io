@@ -9,8 +9,8 @@ description: "Personal Posts"
            {% for post in site.posts %}
             <li>
             <p><h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-					{% if post.content contains '<!--more-->' %}
-               	{{ post.content | split:'<!--more-->' | first }}
+					{% if post.content contains '<!-- more -->' %}
+               	{{ post.content | split:'<!-- more -->' | first }}
             	{% else %}
                 	{{ post.excerpt }}
             	{% endif %}
