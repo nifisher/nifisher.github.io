@@ -9,8 +9,10 @@ description: "Personal Posts"
            {% for post in site.posts %}
             <li>
             <p><h2><ahref="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-               <br><span>[{{ post.date | date_to_string }}]</span>
-               <br>{{ post.content | strip_html | truncatewords:50 }}</p>
+               {{ post.content | strip_html | truncatewords:50 }}
+               <div style="alignright">[{{ post.date | date_to_string }}]</div>
+               <div style="float-clear"></div>
+            </p>
             </li>
             {% endfor %}
         </ul>
