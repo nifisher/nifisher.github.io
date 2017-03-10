@@ -10,12 +10,15 @@ description: "Personal Posts"
             <li>
             <p><h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 					{% if post.content contains '<!-- more -->' %}
-               	{{ post.content | split:'<!-- more -->' | first }}
+                  { post.content | split:'<!-- more -->' | first }}
+                  <br>
             	{% else %}
                 	{{ post.excerpt }}
             	{% endif %}
-            <a href="{{ post.url }}">read more</a>               
-               <div class="alignright">[{{ post.date | date_to_string }}]</div>
+               <div class="alignright">
+                  <a href="{{ post.url }}">read more</a>               
+                  [{{ post.date | date_to_string }}]
+               </div>
                <div style="float-clear"></div>
             </p>
             </li>
