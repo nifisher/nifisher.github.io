@@ -10,7 +10,7 @@ description: "Personal Posts"
             <li>
             <p><h2><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 					{% if post.content contains '<!-- more -->' %}
-                  { post.content | split:'<!-- more -->' | first }}
+                  {{ post.content | split:'<!-- more -->' | first }}
                   <br>
             	{% else %}
                 	{{ post.excerpt }}
