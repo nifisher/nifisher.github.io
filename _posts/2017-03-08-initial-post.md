@@ -8,4 +8,4 @@ sitemap:
     lastmod: 2017-03-08
 ---
 
-Initial post to get this all<!-- more --> set up.
+Initial post to get this all set up.<!-- more -->  And now to do the heavy lifting.
