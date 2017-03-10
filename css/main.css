@@ -17,9 +17,23 @@
 .justify-spaceBetween { justify-content: space-between; }
 
 
+/*- Base settings -*/
+
+html {
+	background-color: $background-color;
+	font-size: 16px;
+	@media (min-width: 940px) {
+		font-size: 18px;
+	}
+	line-height: 1.5;
+	color: $text-color;
+}
 
 body {
+    max-width: 1000px;
+    padding: 0 10px;
     margin: 60px auto;
+    /* margin: 0 auto; */
     width: 70%;
 }
 nav ul, footer ul {
