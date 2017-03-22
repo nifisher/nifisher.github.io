@@ -17,6 +17,7 @@ layout: null
     </url>
   {% endfor %}
   {% for page in site.pages %}
+    {% if page.publish != false %}
     {% if page.sitemap != null and page.sitemap != empty %}
       <url>
         <loc>{{ site.url }}{{ page.url }}</loc>
@@ -24,6 +25,7 @@ layout: null
         <changefreq>{{ page.sitemap.changefreq }}</changefreq>
         <priority>{{ page.sitemap.priority }}</priority>
        </url>
+    {% endif %}
     {% endif %}
   {% endfor %}
 </urlset>
