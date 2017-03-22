@@ -11,7 +11,7 @@ description: "Résumé"
                {% if page.category == 'professional' and page.publish == 'true' %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
-					  	{{ page.excerpt }}
+					  	{{ page.description }}
                </p>
                </li>
                {% endif %}
@@ -24,7 +24,7 @@ description: "Résumé"
                {% if page.category == 'education' and page.publish == 'true' %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
-					  	{{ page.excerpt }}
+					  	{{ page.description }}
                </p>
                </li>
                {% endif %}
