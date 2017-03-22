@@ -14,6 +14,15 @@ description: "Hidden debug page"
                publish:  {{ page.publish }}<bR>
                category:  	{{ page.category }}<br>
                description:  	{{ page.description }}<br>
+               {% if page.category == professional and page.publish == true %}
+               compound <br>
+               {% endif %}
+               {% if page.category == professional %}
+               category <br>
+               {% endif %}
+               {% if  page.publish == true %}
+               publish <br>
+               {% endif %}
                </p>
                </li>
             {% endfor %}
