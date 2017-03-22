@@ -19,7 +19,7 @@ description: "Résumé"
         <li><h2>.professional</h2>
         <ul class="posts">
            {% for page in site.pages %}
-               {% if page.category == 'professional' and page.publish = 'true' %}
+               {% if page.category == 'professional' and page.publish == 'true' %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ post.excerpt }}
@@ -32,7 +32,7 @@ description: "Résumé"
         <li><h2>.education</h2>
         <ul class="posts">
            {% for page in site.pages %}
-               {% if page.category == 'education' and page.publish = 'true' %}
+               {% if page.category == 'education' and page.publish == 'true' %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ post.excerpt }}
