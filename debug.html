@@ -1,0 +1,19 @@
+---
+layout: default
+title: ".debug"
+description: "Hidden debug page"     
+---
+        <h1>{{ page.title }}</h1>
+        <ul class="posts">
+        <li><h2>.sitemap</h2>
+        <ul class="posts">
+           {% for page in site.pages %}
+               <li>
+               <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+               </p>
+               </li>
+            {% endfor %}
+        </ul>
+          </li>
+          </ul>
+        <p>&nbsp </p>
