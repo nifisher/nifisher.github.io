@@ -10,6 +10,7 @@ description: "Hidden debug page"
            {% for page in site.pages %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+               url: {{ page.url }}
                publish == {{ page.publish }}
                excerpt:  	{{ page.excerpt }}
                </p>
