@@ -14,9 +14,9 @@ I figured that school and some volunteer work took precedence, so I was tied up 
 Jekyll magic I was trying to figure out.  Of course, I later learned that i was doing things the wrong way and 
 switched to a "better" approach.
 
-The [.projects]({{ site.baseurl }}/projects) page is still missing.  I know this.  I've got some old code 
+The [.projects]({{ site.url }}/projects) page is still missing.  I know this.  I've got some old code 
 to seed it with, but I don't feel like putting in much of a place holder until I get that up.  At least I got the 
-[.about]({{ site.baseurl }}/about) and [.résumé]({{ site.baseurl }}/resume) pages up.  I'm not entirely happy
+[.about]({{ site.url }}/about) and [.résumé]({{ site.url }}/resume) pages up.  I'm not entirely happy
 with how .résumé displays, but it gets the information across, but part of that is from
 [markdown](https://daringfireball.net/projects/markdown/) not being the quite right format for me to be using.  I
 might have to redo it in straight HTML or build a template.  It works for now though.
