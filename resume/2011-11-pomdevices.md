@@ -14,7 +14,7 @@ career:
 
 # {{ page.title }}
 ---
-{{ page.career.start }} - {{ page.career.end }}  **{{ page.career.position }}**  
+**{{ page.career.position }}**  {{ page.career.start }} - {{ page.career.end }}  
 {{ page.description }}
 ### Accomplishments
 * Integration of Bluetooth functionality into existing code base
