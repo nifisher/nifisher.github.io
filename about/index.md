@@ -5,6 +5,10 @@ description: "about page"
 category: informative
 published: true
 featured: false
+sitemap:
+    priority: 0.7
+    changefreq: 'monthly'
+    lastmod: 2017-03-22
 ---
 
 # .{{ page.title }}
