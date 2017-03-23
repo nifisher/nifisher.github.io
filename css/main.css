@@ -138,7 +138,7 @@ blockquote {
 
 hr {
    /*height: 1px;*/
-   width: 62 /* Golden Ratio */
+   width: 62% /* Golden Ratio */
 }
 
 @media (min-width: 940px) { /*Breakpoint set to 940px*/
