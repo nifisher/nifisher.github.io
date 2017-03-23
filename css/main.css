@@ -136,6 +136,11 @@ blockquote {
 
 /*- Typography for big screen, based on 18px font-size -*/
 
+hr {
+   /*height: 1px;*/
+   width: 62 /* Golden Ratio */
+}
+
 @media (min-width: 940px) { /*Breakpoint set to 940px*/
 
 p, ul, ol {
