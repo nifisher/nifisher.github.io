@@ -13,6 +13,7 @@ career:
 ---
 
 # {{ page.title }}
+---
 {{ page.career.start }} - {{ page.career.end }}  **{{ page.career.position }}**  
 {{ page.description }}
 ## Accomplishments
