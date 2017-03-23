@@ -16,7 +16,7 @@ career:
 ---
 {{ page.career.start }} - {{ page.career.end }}  **{{ page.career.position }}**  
 {{ page.description }}
-## Accomplishments
+### Accomplishments
 * Integration of Bluetooth functionality into existing code base
 * Implementation of communication procedures between Sonamba and assorted Bluetooh enabled biometric meters
 * Enhancment of existing scheduling code
