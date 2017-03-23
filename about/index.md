@@ -3,7 +3,7 @@ layout: default
 title: "about"
 description: "about page"  
 category: informative
-publish: true
+published: true
 featured: false
 ---
 

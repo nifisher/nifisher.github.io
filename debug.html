@@ -2,7 +2,7 @@
 layout: default
 title: ".debug"
 description: "Hidden debug page"  
-publish: false
+published: false
 sitemap: false   
 ---
         <h1>{{ page.title }}</h1>
@@ -13,7 +13,7 @@ sitemap: false
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
                url: {{ page.url }}<br>
-               publish:  {{ page.publish }}<bR>
+               published:  {{ page.published }}<bR>
                category:  	{{ page.category }}<br>
                description:  	{{ page.description }}<br>
                {% if page.category == "professional" and page.publish == true %}

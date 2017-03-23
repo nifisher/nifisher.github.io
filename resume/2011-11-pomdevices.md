@@ -3,7 +3,7 @@ layout: default
 title: "POM Devices"
 description: "C++ development on the Sonamba Elderly Care Monitor"  
 category: professional
-publish: true
+published: true
 featured: false
 career:
    current: false
