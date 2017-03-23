@@ -25,7 +25,8 @@ sitemap:
           </li>
         <li><h2>.education</h2>
         <ul class="posts">
-           {% for page in site.pages %}
+           {% assign sorted_pages = site.pages | sort:"name" %}
+           {% for page in sorted_pages reversed %}
                {% if page.category == "education" and page.published == true %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
