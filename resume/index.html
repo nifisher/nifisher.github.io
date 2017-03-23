@@ -7,7 +7,8 @@ description: "Résumé"
         <ul class="posts">
         <li><h2>.professional</h2>
         <ul class="posts">
-           {% for page in site.pages %}
+           {% assign sorted_pages = site.pages | sort:"name" %}
+           {% for page in sorted_pages %}
                {% if page.category == "professional" and page.publish == true %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
