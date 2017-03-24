@@ -15,9 +15,9 @@ sitemap:
            {% for page in sorted_pages reversed %}
                {% if page.category == "professional" and page.published == true %}
                <li>
-               <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+               <h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ page.description }}
-               </p>
+               <hr width=28%>
                </li>
                {% endif %}
             {% endfor %}
