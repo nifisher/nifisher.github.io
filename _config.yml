@@ -9,6 +9,8 @@ author:
 
 # Build Settings
 markdown: kramdown
+kramdown:
+   input: GFM
 baseurl: /
 source: .
 destination: ./_site
