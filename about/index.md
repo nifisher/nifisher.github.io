@@ -45,11 +45,11 @@ I've got some projects that I want to dabble in.
 I've got nothing...
 
 ## .where  
-Github Pages.   Have not been using my [Github account](https://github.com/nifisher)
+Github Pages.   I had not been using my [Github account](https://github.com/nifisher)
 enough, and this seemed as good an excuse as any.
 
 ## .how  
 Using [Jekyll](http://jekyllrb.com/) for page creation.  At one point I
 was raiding the [monoChrome](https://github.com/dyutibarma/monochrome) 
 theme for ideas and CSS, but at this point I'm not sure how much is left
-from there.
+from there.  Any other stolen or borrowed code should be linked in the source.
