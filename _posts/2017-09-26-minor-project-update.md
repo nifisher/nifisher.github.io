@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minor .project updater"
+title: "Minor project page update"
 date: 2017-09-26
 sitemap:
     priority: 0.7
