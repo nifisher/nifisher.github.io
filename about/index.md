@@ -52,4 +52,5 @@ enough, and this seemed as good an excuse as any.
 Using [Jekyll](http://jekyllrb.com/) for page creation.  At one point I
 was raiding the [monoChrome](https://github.com/dyutibarma/monochrome) 
 theme for ideas and CSS, but at this point I'm not sure how much is left
-from there.  Any other stolen or borrowed code should be linked in the source.
+from there.  Any other stolen or borrowed code should be linked in the html 
+source.
