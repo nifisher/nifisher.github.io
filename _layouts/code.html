@@ -8,10 +8,13 @@
                    <!-- google code prettify http://google-code-prettify.googlecode.com -->
                    <link href="/css/desert.css" type="text/css" rel="stylesheet" />
                    <script type="text/javascript" src="/js/prettify.js"></script>
+                   <!-- I really only need to add prettyPrint() to the onload function in the body
+                      but this will force github to use prettyprint as the highliter and turn on
+                      line numbers, so going this route for now -->
                    <script type="text/javascript">
                    function loadPrettyPrint() {
                        [].forEach.call(document.getElementsByTagName("pre"), function(el) {
-                        el.classList.add("prettyprint");
+                        el.classList.add("prettyprint linenums");
                        });
                        prettyPrint();
                    }
@@ -29,7 +32,12 @@
                         </nav>
                         <div class="container">
                         
-                           {{ content }}
+                           <h1>{{ page.title }}</h1>
+                           <p class="meta">{{ page.date | date_to_string }}</p>
+
+                           <div class="post">
+                              {{ content }}
+                           </div>
                         
                         </div><!-- /.container -->
 
