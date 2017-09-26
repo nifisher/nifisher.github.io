@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+        <html>
+                <head>
+                   <title>{%if page.title %}{{ site.title }}: {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+                   <meta name="description" content="{%if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+                   <!-- link to main stylesheet -->
+                   <link rel="stylesheet" type="text/css" href="/css/main.css">
+                   <!-- google code prettify http://google-code-prettify.googlecode.com -->
+                   <link href="/css/desert.css" type="text/css" rel="stylesheet" />
+                   <script type="text/javascript" src="/js/prettify.js"></script>
+
+                </head>
+                <body>
+                        <nav>
+                        <ul>
+									<li><a href="/">.home</a></li>
+									<li><a href="/about">.about</a></li>
+									<li><a href="/resume">.résumé</a></li>
+									<li><a href="/projects">.projects</a></li>
+									<li><a href="/plan">.plan</a></li>
+                        </ul>
+                        </nav>
+                        <div class="container">
+                        
+                           {{ content }}
+                        
+                        </div><!-- /.container -->
+
+                        <div> <!-- Footer -->
+                               {% include footer.html %}
+                        </div>
+                </body>
+        </html>
