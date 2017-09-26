@@ -5,6 +5,7 @@ description: "Locate local min/max on arbitrary curve"
 category: project.minor
 published: true
 featured: false
+date: 2017-09-26
 ---
 
 This was written as a code sample for a job interview, so I did my best to comment it well.  That said, I haven't looked at this in many years, so I'd be drawing a blank trying explaining it now without looking it back over for a while.
