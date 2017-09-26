@@ -23,7 +23,7 @@ typedef struct data_point_s
       int         i; // index
       double      x; // X value
       double      y; // Y value
-      double      m;    // slope through the point (from the cubic)
+      double      m; // slope through the point (from the cubic)
       double      m_next;  // (point - 1) to (point) linear slope
       double      m_prev;  // (point) to (point + 1) linear slope
    } data_point_t;
@@ -228,7 +228,7 @@ int main(int argc, char** argv)
                   )
                {
                   // Change in slope direction between the points. Look for the min/max
-                  //Roughly Netwon's Method  to find roots. Should work. Should be better options out there, though.
+                  // Roughly Netwon's Method  to find roots. Should work. Should be better options out there, though.
                   int j = 0;
                   
                   s = 0.5;
