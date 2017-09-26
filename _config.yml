@@ -9,7 +9,6 @@ author:
 
 # Build Settings
 markdown: kramdown
-highlighter: prettyprint
 baseurl: /
 source: .
 destination: ./_site
