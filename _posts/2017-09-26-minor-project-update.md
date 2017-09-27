@@ -10,7 +10,7 @@ sitemap:
 
 Finally got around to putting something on the [.projects]({{ site.url }}/projects) page.
 
-I had a small vehicle issue driving to work last week which forced my hand and lead me to buy a car sooner than I had 
+I had a small vehicle issue driving to work last week which forced my hand and led me to buy a car sooner than I had 
 planned too (though not by much).  It did relieve some of the stress from my plate though so I finally got around to
 making an update I've been meaning to do.
 
