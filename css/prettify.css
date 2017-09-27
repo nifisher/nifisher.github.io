@@ -19,7 +19,7 @@
 
 
 /* SPAN elements with the classes below are added by prettyprint. */
-.pln { color: #000 }  /* plain text */
+.pln { color: #000; font-size: smaller }  /* plain text */
 
 @media screen {
   .str { color: #080 }  /* string content */
