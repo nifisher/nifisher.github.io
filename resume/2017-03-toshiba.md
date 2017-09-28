@@ -2,7 +2,7 @@
 layout: default
 title: "Toshiba Global Commerce Solutions"
 description: "Agile based C/C++ and Python development for 4690 OS"  
-category: professional
+category: resume.professional
 published: true
 featured: false
 career:

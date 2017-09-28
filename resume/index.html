@@ -13,7 +13,7 @@ sitemap:
         <ul class="posts">
            {% assign sorted_pages = site.pages | sort:"name" %}
            {% for page in sorted_pages reversed %}
-               {% if page.category == "professional" and page.published == true %}
+               {% if page.category == "resume.professional" and page.published == true %}
                <li>
                <h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ page.description }}
@@ -26,7 +26,7 @@ sitemap:
         <ul class="posts">
            {% assign sorted_pages = site.pages | sort:"name" %}
            {% for page in sorted_pages reversed %}
-               {% if page.category == "education" and page.published == true %}
+               {% if page.category == "resume.education" and page.published == true %}
                <li>
                <h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ page.description }}
