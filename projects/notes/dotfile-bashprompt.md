@@ -20,35 +20,36 @@ Explained in piecemeil because why not?
 First, let us make the colors easier to read...  
 
 ```
-R="\[\e[m\]"                                                                                                              
-RESET="\[\e[m\]"                                                                                                          
-BOLD="\[\e[1m\]"                                                                                                          
-FAINT="\[\e[2m\]"                                                                                                         
-UNDERLINE="\[\e[4m\]"                                                                                                     
-REVERSE="\[\e[7m\]"                                                                                                       
-STRIKEOUT="\[\e[9m\]"                                                                                                     
-LO_BLACK="\[\e[30m\]"                                                                                                     
-LO_RED="\[\e[31m\]"                                                                                                       
-LO_GREEN="\[\e[32m\]"                                                                                                     
-LO_YELLOW="\[\e[33m\]"                                                                                                    
-LO_BLUE="\[\e[34m\]"                                                                                                      
-LO_MAGENTA="\[\e[35m\]"                                                                                                   
-LO_CYAN="\[\e[36m\]"                                                                                                      
-LO_WHITE="\[\e[37m\]"                                                                                                     
-HI_BLACK="\[\e[30;90m\]"                                                                                                  
-HI_RED="\[\e[31;91m\]"                                                                                                    
-HI_GREEN="\[\e[32;92m\]"                                                                                                  
-HI_YELLOW="\[\e[33;93m\]"                                                                                                 
-HI_BLUE="\[\e[34;94m\]"                                                                                                   
-HI_MAGENTA="\[\e[35;95m\]"                                                                                                
-HI_CYAN="\[\e[36;96m\]"                                                                                                   
-HI_WHITE="\[\e[37;97m\]"                                                                                                  
-BG_BLACK="\[\e[40m\]"                                                                                                     BG_RED="\[\e[41m\]"                                                                                                       
-BG_GREEN="\[\e[42m\]"                                                                                                     
-BG_YELLOW="\[\e[43m\]"                                                                                                    
-BG_BLUE="\[\e[44m\]"                                                                                                      
-BG_MAGENTA="\[\e[45m\]"                                                                                                   
-BG_CYAN="\[\e[46m\]"                                                                                                      
+R="\[\e[m\]"  
+RESET="\[\e[m\]"  
+BOLD="\[\e[1m\]"  
+FAINT="\[\e[2m\]" 
+UNDERLINE="\[\e[4m\]" 
+REVERSE="\[\e[7m\]"   
+STRIKEOUT="\[\e[9m\]" 
+LO_BLACK="\[\e[30m\]" 
+LO_RED="\[\e[31m\]"   
+LO_GREEN="\[\e[32m\]" 
+LO_YELLOW="\[\e[33m\]"
+LO_BLUE="\[\e[34m\]"  
+LO_MAGENTA="\[\e[35m\]"   
+LO_CYAN="\[\e[36m\]"  
+LO_WHITE="\[\e[37m\]" 
+HI_BLACK="\[\e[30;90m\]"  
+HI_RED="\[\e[31;91m\]"
+HI_GREEN="\[\e[32;92m\]"  
+HI_YELLOW="\[\e[33;93m\]" 
+HI_BLUE="\[\e[34;94m\]"   
+HI_MAGENTA="\[\e[35;95m\]"
+HI_CYAN="\[\e[36;96m\]"   
+HI_WHITE="\[\e[37;97m\]"  
+BG_BLACK="\[\e[40m\]"
+BG_RED="\[\e[41m\]"   
+BG_GREEN="\[\e[42m\]" 
+BG_YELLOW="\[\e[43m\]"
+BG_BLUE="\[\e[44m\]"  
+BG_MAGENTA="\[\e[45m\]"   
+BG_CYAN="\[\e[46m\]"  
 BG_WHITE="\[\e[47m\]"   
 ```
 
@@ -75,7 +76,7 @@ USERCOLOR="\[\e[0;${COLORCODE}m\]"
 
 Bash can use more than 6 colors, and someday I might update this to use more, but this has been fine so far.
 
-After that, it's just a matter of setting PS1...  
+After that, it's just a matter of setting PS1.  If we are currently root, force the color to something obnoxious so it stands out.  
 
 ```
 # clear PROMPT_COMMAND as I'm not using it
@@ -83,12 +84,8 @@ export PROMPT_COMMAND=
 
 if [ `whoami` = "root" ]
 then
-        export PS1="$BG_RED$HI_YELLOW\u${HI_WHITE}@${HI_YELLOW}\h$HI_BLACK:$HI_GREEN\w $HI_WHITE\$$R "
+export PS1="$BG_RED$HI_YELLOW\u${HI_WHITE}@${HI_YELLOW}\h$HI_BLACK:$HI_GREEN\w $HI_WHITE\$$R "
 else
-        #export PS1="$BG_BLUE$LO_CYAN\u${HI_CYAN}@${LO_CYAN}\h$HI_BLACK:$HI_GREEN\w $HI_WHITE\$$R "
-        #export PS1="$BG_BLUE$LO_MAGENTA\u${HI_MAGENTA}@${LO_MAGENTA}\h$HI_BLACK:$HI_GREEN\w $HI_WHITE\$$R "
-        #export PS1="$BG_BLUE$LO_GREEN\u${HI_GREEN}@${LO_GREEN}\h$HI_BLACK:$HI_GREEN\w $HI_WHITE\$$R "
-	#export PS1="\n$LO_BLUE[$HI_BLUE\u${LO_GREEN}@${HI_GREEN}\w$LO_BLUE]\n$LO_BLUE[$LO_CYAN\h$LO_BLUE]::$R "
 	export PS1="\n$LO_WHITE[${USERCOLOR}\u${LO_GREEN}@${HI_GREEN}\w$LO_WHITE]\n$LO_WHITE[${HOSTCOLOR}\h${LO_WHITE} ($SHLVL.\j)]::$R "
 fi
  
