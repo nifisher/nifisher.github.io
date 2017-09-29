@@ -12,9 +12,17 @@ sitemap:
  
    <!-- <li><h2>.major/h2>
         <ul class="posts">
-           {% assign sorted_pages = site.pages | sort:"name" %}
-           {% for page in sorted_pages reversed %}
-               {% if page.category == "project.major" and page.published == true %}
+           {% for page in site.pages %}
+               {% if page.category == "project.major" and page.published == true and page.featured == true %}
+               <li>
+               <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					  	{{ page.description }}
+               </p>
+               </li>
+               {% endif %}
+           {% endfor %}
+           {% for page in site.pages %}
+               {% if page.category == "project.major" and page.published == true and page.featured == false %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ page.description }}
@@ -23,20 +31,51 @@ sitemap:
                {% endif %}
             {% endfor %}
         </ul>
-    </li>  -->
+               </li> 
+               -->
         <li><h2>.minor</h2>
         <ul class="posts">
            {% for page in site.pages %}
-               {% if page.category == "project.minor" and page.published == true %}
+               {% if page.category == "project.minor" and page.published == true and page.featured == true %}
                <li>
                <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
 					  	{{ page.description }}
                </p>
                </li>
                {% endif %}
-            {% endfor %}
+           {% endfor %}
+           {% for page in site.pages %}
+               {% if page.category == "project.minor" and page.published == true and page.featured == false %}
+               <li>
+               <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					  	{{ page.description }}
+               </p>
+               </li>
+               {% endif %}
+           {% endfor %}
         </ul>
                </li>
-
+        <li><h2>.notes</h2>
+        <ul class="posts">
+           {% for page in site.pages %}
+               {% if page.category == "project.notes" and page.published == true and page.featured == true %}
+               <li>
+               <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					  	{{ page.description }}
+               </p>
+               </li>
+               {% endif %}
+           {% endfor %}
+           {% for page in site.pages %}
+               {% if page.category == "project.notes" and page.published == true and page.featured == false %}
+               <li>
+               <p><h2><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h2>
+					  	{{ page.description }}
+               </p>
+               </li>
+               {% endif %}
+           {% endfor %}
+        </ul>
+               </li>
         </ul>
         <p>&nbsp </p>
