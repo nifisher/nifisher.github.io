@@ -86,7 +86,7 @@ if [ `whoami` = "root" ]
 then
    export PS1="$BG_RED$HI_YELLOW\u${HI_WHITE}@${HI_YELLOW}\h$HI_BLACK:$HI_GREEN\w $HI_WHITE\$$R "
 else
-	export PS1="\n$LO_WHITE[${USERCOLOR}\u${LO_GREEN}@${HI_GREEN}\w$LO_WHITE]\n$LO_WHITE[${HOSTCOLOR}\h${LO_WHITE} ($SHLVL.\j)]::$R "
+   export PS1="\n$LO_WHITE[${USERCOLOR}\u${LO_GREEN}@${HI_GREEN}\w$LO_WHITE]\n$LO_WHITE[${HOSTCOLOR}\h${LO_WHITE} ($SHLVL.\j)]::$R "
 fi
  
 ```
