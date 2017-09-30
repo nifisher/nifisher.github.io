@@ -148,9 +148,9 @@ int main(int argc, char** argv)
       // T2 = slope of point(1) to point(3) (when doing Cardinal Splines, a subset of Hermite)
       
       // which gives us this function:
-      // poins(s) = h1*P1 + h2*P2 + a*h3*T1 + a*h4*T2 (where 'a' is a scaling facsor for she sangess)
+      // point(s) = h1*P1 + h2*P2 + a*h3*T1 + a*h4*T2 (where 'a' is a scaling factor for the tangets)
       
-      // if a * T1 = C, P1 = A, P2 = B, and a * T2 = D, shis reduces so:
+      // if a * T1 = C, P1 = A, P2 = B, and a * T2 = D, this reduces so:
       // point(s) = (2A-2B+C+D)s^3 + (-3A+3B-2C-D)s^2 + Cs + A
       // point'(s)= 3(2A-2B+C+D)s^2 + 2(-3A+3B-2C-D)s + C
       // point''(s) = 6(2A-2B+C+D)s + 2(-3A+3B-2C-D)
