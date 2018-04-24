@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Toshiba Global Commerce Solutions"
-description: "Agile based C/C++ and Python development for TCx Sky/4690 OS"  
+description: "Agile based C/C++ and Python development for TCx Sky/4690 Retail OS"  
 category: resume.professional
 published: true
 featured: false
@@ -18,6 +18,6 @@ career:
 {{ page.career.start }} - {{ page.career.end }}  
 {{ page.description }}
 ### Accomplishments
-* Development of a UEFI Bootloader  
-* Enhancements needed to support operation as a KVM Guest  
-* Extended existing support of onboard sensors
+* Development of bootloader for UEFI BIOS based systems  
+* Enhancement of existing code base to support operation in a KVM enviroment  
+* Extension of existing sensor algorithms in support of newly developed hardware
