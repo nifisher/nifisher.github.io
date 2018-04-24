@@ -17,3 +17,7 @@ career:
 **{{ page.career.position }}**  
 {{ page.career.start }} - {{ page.career.end }}  
 {{ page.description }}
+### Accomplishments
+* Development of a UEFI Bootloader  
+* Enhancements needed to support operation as a KVM Guest  
+* Extended existing support of onboard sensors
