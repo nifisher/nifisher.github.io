@@ -8,7 +8,7 @@ featured: false
 career:
    current: true
    start: "Mar, 2017"
-   end: "Current"
+   end: "Jun, 2018"
    position: "Software Engineer"
 ---
 
