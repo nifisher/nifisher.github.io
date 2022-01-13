@@ -15,14 +15,14 @@ sitemap:
 ## .why  
 Years ago, I figured that an on-line portfolio might be a useful
 thing to have in my job search efforts.   Plus, every now and again 
-I figure that I should review that I really don't know HTML/CSS very
-well and maybe try to fix that.  Attempts have been made in the past
-but were shut down for various reasons.  Since I'm not using my github
-account actively, I figured I should look into the gitpages option
-and see how it works out of me to these ends.
+I figure that I should review my knowledge of HTML/CSS and maybe improve
+it some.  Attempts at websites have been made in the past
+but were shut down for various reasons.  As Github offers this hosting,
+I figured I should look into the gitpages option and see how well it works 
+to these ends.
 
 ## .who  
-I have been doing software development for almost twenty years at this
+I have been doing software development for over twenty years at this
 point.  Graduated with a Computer Engineering degree at the end of the
 dot com boom meant that graduation day was spent learning who's job 
 offers were pulled that morning.  I made it through though and managed
@@ -38,8 +38,8 @@ gravitas.
 Here is where I plan to put up small projects that I'm working on and 
 anything I feel like sharing.  Honestly I don't expect much to show up
 quickly; I mean, if I've been coding all day at work, I generally have
-other stuff to do when I get home.  But with school coming to an end, 
-I've got some projects that I want to dabble in.
+other stuff to do when I get home.  But I've always got some small 
+projects that I want to dabble in when time can be found.
 
 ## .when  
 I've got nothing...
