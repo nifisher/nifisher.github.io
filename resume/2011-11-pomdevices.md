@@ -7,8 +7,8 @@ published: true
 featured: false
 career:
    current: false
-   start: "Feb, 2014"
-   end: "Mar, 2017"
+   start: "Jul, 2011"
+   end: "Nov, 2011"
    position: "Embedded Software Engineer"
 ---
 
